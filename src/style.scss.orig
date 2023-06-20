@@ -1,0 +1,17 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-cpj-contact-form-cpj-contact-form {
+	display:block;
+	width:600px;
+	height:700px;
+	border: 1px solid rgb(54, 63, 135);
+	border-radius:10px;
+	background-color:rgb(247, 221, 187);
+	box-shadow:4px 4px 7px rgba(0,0,0,0.5);
+}
+

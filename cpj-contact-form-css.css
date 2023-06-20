@@ -1,0 +1,189 @@
+@charset "UTF-8";
+/* CSS Document 
+* Name: cpj-contact-form-css.css
+* Author: Paul Jarvis
+* Version: 2.0
+*Description: css file for CPJ Contact form plugin
+*/
+
+.wp-block-cpj-contact-form-cpj-contact-form {
+	display:block;
+	width:600px;
+	height:auto;
+	border: 1px solid rgb(54, 63, 135);
+	border-radius:10px;
+	background-color:rgb(247, 221, 187);
+	box-shadow:4px 4px 7px rgba(0,0,0,0.5);
+}
+#contact-form-block{
+	width:100%;
+	margin:0px;
+	padding:0px;
+	margin-left:20px;
+
+}
+.contact-form-label{
+	font-size:1.6em;
+	line-height:1.8em;
+	/*color:#303030;*/
+	margin:10px;
+	float:left;
+	width:110px;
+	margin-top:22px;
+}
+.contact-form-label-message{
+	font-size:1.6em;
+	line-height:1.8em;
+	/*color:#303030;*/
+	margin:10px;
+}
+.contact-form-input{
+	
+	margin:20px 4px 0px 0px;
+	float:left;
+}
+.contact-form-row::after{
+	content:'';
+	clear:both;
+	display:table;
+}
+.contact-form-label-pcm{
+	font-size:1.6em;
+	line-height:1.8em;
+	/*color:#303030;*/
+	margin:10px;
+	float:left;
+}	
+.contact-form-input input{
+	width:300px;
+	height:50px;
+	border:1px solid #303030;
+	border-radius:8px;
+	line-height:3vh;
+	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	font-size:18px;
+	line-height:20px;
+	color:#e50e0e;
+	margin:0px 10px 0px 5px;
+	background-color:#EBEAEA;
+}
+#contact-form-pref-method{
+	width:100px;
+	font-size:18px;
+	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	padding:0px;
+	margin:0px;
+	border:1px solid #303030;
+	border-radius:4px;
+	margin-top:25px;
+	padding-left:10px;
+}
+#contact-form-message{
+	width:500px;
+	height:200px;
+	font-size:1.1em;
+	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	border:1px solid #303030;
+	border-radius:8px;	
+	margin:0px 10px;
+	padding:5px;
+}
+#cpj-contact-form-send-btn1{
+	width:150px;
+	height:64px;
+	line-height:28px;
+	font-size:24px;
+	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	border:2px solid #303030;
+	border-radius:10px;	
+	color:#2c2a2a;
+	background-color:#328BE3;
+	background: linear-gradient(0deg, #205896 0, #328BE3 100%);
+
+}
+#cpj-contact-form-send-btn1:hover{
+	cursor:pointer;
+	color:#fefefe;
+}
+#cpj-contact-form-send-btn1:focus{
+	background-color:#328BE3;
+	background: linear-gradient(0deg, #328BE3 0, #205896 100%);
+}
+
+#message-box{
+	width:80%;
+	margin:20px auto;
+	color:#333333;
+	font-weight:bold;
+	
+}
+
+#ajax-loader{
+	display:block;
+	position:absolute;
+	top:33%;
+	left:33%;
+	z-index:120;
+}
+.cpj-contact-form-submit-btn-block{
+	text-align:center;
+	margin:20px 0px 10px 0px;
+}
+#cpj_contact_form_error_response_block{
+	width:100%;
+	text-align:center;
+	color:red;
+}
+@media screen and (max-width: 480px){
+	.wp-block-cpj-contact-form-cpj-contact-form{
+		width:98%;
+		margin:0px auto;
+	}
+	.contact-form-input input{
+		width:260px;
+	}	
+	.contact-form-input{
+		margin-top:0px;
+	}
+	#contact-form-pref-method{
+		margin:-20px 0px 10px 100px;
+	}
+	#contact-form-message{
+		width:250px;
+	}
+	.contact-form-label-pcm{
+		margin-left:-10px;
+	}
+}/*end 480 */
+
+@media only screen and (min-width:481px) and (max-width:780px){
+	/*
+	.email-icon-size img {width:10%;}
+	.sms-icon-size img {width:10%;}
+	*/
+	.contact-from-input input{
+		width:250px;
+		margin-top:17px;
+	}
+	.contact_form_label{
+		margin-top:-10px;
+	}
+	#contact-form-message{
+		margin-left:20px;
+		font-size:1.4em;
+		line-height:1.6em;
+		width:420px;
+		
+	}
+	.cpj-contact-form-submit-btn-block{
+	text-align:left;
+	margin:20px 0px 10px 240px;
+}
+	/*#contact-form-block{
+		font-size:1.6em;
+		line-height:1.8em;
+		
+	}*/
+
+}/*end 720 */
+
