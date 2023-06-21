@@ -1,6 +1,6 @@
 === CPJ Contact Form ===
 Contributors:      Paul Jarvis
-Tags:              block, contact form, email form
+Tags:              block, contact form, email form, cpj
 Tested up to:      6.2.2
 Stable tag:        2.0.0
 License:           GPL-2.0-or-later
@@ -31,11 +31,9 @@ contact me at https://cpauljarvis.com
 
 == Screenshots ==
 
-1. This screen shot description corresponds to screenshot-1.(png|jpg|jpeg|gif). Note that the screenshot is taken from
-the /assets directory or the directory that contains the stable readme.txt (tags or trunk). Screenshots in the /assets
-directory take precedence. For example, `/assets/screenshot-1.png` would win over `/tags/4.3/screenshot-1.png`
-(or jpg, jpeg, gif).
-2. This is the second screen shot
+1. Contact form as displayed on front of site. colors and fonts are customizable in page editor
+2. Response to successful submission of form
+3. Admin options form for updating email address and response text
 
 == Changelog ==
 
