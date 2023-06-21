@@ -46,7 +46,7 @@ License: GPL GNU
                                     'name':$("#contact-form-name").val(),
                                     'email':$("#contact-form-email").val(),
                                     'phone':$("#contact-form-phone").val(),
-                                    'pref':$("contact-form-pref-method").val(),
+                                    'pref':$("#contact-form-pref-method").val(),
                                     'message':$("#contact-form-message").val()
                                  }
                 $(".wp-block-cpj-contact-form-cpj-contact-form").html('<img id="ajax-loader" src="'+cpj_ajax_obj.ajax_loader_url+'">');
@@ -72,6 +72,7 @@ License: GPL GNU
         });
 
         $("#cpj_contact_form_admin_email_btn").click(function(){
+
         
                   const formData = {
                                     'cpj-contact-form-nonce':cpj_ajax_obj.nonce,

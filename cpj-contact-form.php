@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name:       CPJ Contact Form
- * Plugin URI:        cpauljarvis.com
+ * Plugin URI:        https://cpauljarvis.com
  * Description:       A e-mail contact form block plugin
  * Requires at least: 6.1
  * Requires PHP:      7.0
@@ -61,7 +61,7 @@ function js_enqueue($hook){
 }//end fx
 
 add_action('wp_enqueue_scripts', 'js_enqueue');
-
+add_action('admin_enqueue_scripts','js_enqueue');
 
 add_action('admin_menu','cpj_contact_form_options_page');
 
@@ -106,10 +106,10 @@ function cpj_contact_form_handler(){
 	$msg = sanitize_textarea_field($_POST['message']);
 	
 	$emailSubject = "Contact Form has been Submitted";
-	$emailMsg = "Name: ". $name . "\n Phone:". $phone . "\n Preferred Method of Contact: " . $prefer . "\n Message: \n" . $msg;
+	$emailMsg = "Name: ". esc_html($name) . "\n Phone:". esc_html($phone) . "\n Preferred Method of Contact: " . esc_html($prefer) . "\n Message: \n" . esc_html($msg);
 	
-	$headers = 'From: ' . $email . "\r\n" .
-    'Reply-To: ' .$email . "\r\n" .
+	$headers = 'From: ' . esc_html($email) . "\r\n" .
+    'Reply-To: ' . esc_html($email) . "\r\n" .
     'X-Mailer: PHP/' . phpversion();
 	
 	$email = get_option("cpj_contact_form_admin_email");
@@ -188,7 +188,7 @@ function cpj_contact_form_admin_handler(){
 
 		update_option("cpj_contact_form_admin_email",sanitize_text_field($_POST['email']));
 		
-		update_option("cpj_contact_form_msg",sanitize_text_field($_POST['message']));
+		update_option("cpj_contact_form_msg",sanitize_textarea_field($_POST['message']));
 
 		echo "Success, Admin options have been updated";
 
